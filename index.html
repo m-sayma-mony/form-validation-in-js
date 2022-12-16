@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validation</title>
+<!-- Css Link -->
+	<link rel="stylesheet" href="css/style.css">
+<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Google Font Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<style> @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap'); </style>
+</head>
+<body>
+<!-- main div start -->
+	<main>
+		<form action="">
+			<div class="name">
+				<label for="name">Name<span class="req-star"> *</span></label><br>
+
+				<input type="text" placeholder="Name" name="name" id="name" class="input-field">
+
+				<div class="error-mess" id="name-error"></div>
+			</div>
+
+			<div class="number">
+				<label for="number">Phone</label><br>
+				<input type="number" placeholder="Phone Number" name="number" id="number" class="input-field">
+			</div>
+
+			<div class="user-name">
+				<label for="user-name">Username</label><br>
+				<input type="text" placeholder="User Name" name="user-name" id="user-name" class="input-field">
+			</div>
+
+			<div class="email">
+				<label for="email">Email<span class="req-star"> *</span></label><br>
+
+				<input type="email" placeholder="Email Address" name="email" id="email" class="input-field">
+
+				<div class="error-mess" id="email-error"></div>
+			</div>
+
+			<div class="password">
+				<label for="pass">Password<span class="req-star"> *</span></label><br>
+
+				<input type="text" placeholder="Password" name="pass" id="password" class="input-field">
+
+				<div class="error-mess" id="pass-error"></div>
+			</div>
+
+			<div class="con-pass">
+				<label for="con-pass">Confirm Password</label><br>
+
+				<input type="text" placeholder="Confirm Password" name="con-pass" id="con-pass" class="input-field">
+
+				<div class="error-mess" id="con-pass-error"></div>
+			</div>
+
+			<div class="submit">
+				<button type="submit" onclick="return valid()" name="submit">Send</button>
+			</div>
+		</form>
+	</main>
+<!-- main div end -->
+
+<!-- JS Link Start	 -->
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- JS Link End	 -->
+</body>
+</html>
